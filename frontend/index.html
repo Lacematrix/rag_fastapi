@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG Agent Simplified</title>
+    <link rel="stylesheet" href="/frontend/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel panel-left">
+        <h1>RAG Agent 问答 Demo</h1>
+        <p class="subtitle">FastAPI + LangChain Agent + Milvus + Ollama Embedding/Rerank</p>
+
+        <form id="upload-form" class="card">
+          <h2>文档入库</h2>
+          <label>Collection
+            <input id="collection" type="text" value="rag_default_store" />
+          </label>
+          <label>Chunk Mode
+            <select id="chunk-mode">
+              <option value="structure_aware">structure_aware</option>
+              <option value="fixed_size">fixed_size</option>
+            </select>
+          </label>
+          <input id="file-input" type="file" accept=".txt,.md,.pdf" required />
+          <button type="submit">上传并切块入库</button>
+          <div id="upload-result" class="result"></div>
+        </form>
+      </section>
+
+      <section class="panel panel-right">
+        <div class="card">
+          <h2>问答</h2>
+          <textarea id="question" rows="4" placeholder="输入问题，例如：OA系统的数据安全策略是什么？"></textarea>
+          <div class="inline-controls">
+            <label>TopK <input id="topk" type="number" value="8" min="1" max="20" /></label>
+            <button id="ask-btn" type="button">提问</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>改写与拆分</h3>
+          <div id="rewrite-box" class="result"></div>
+        </div>
+
+        <div class="card">
+          <h3>回答</h3>
+          <div id="answer-box" class="result answer"></div>
+        </div>
+
+        <div class="card">
+          <h3>命中片段</h3>
+          <div id="chunks-box" class="result"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/frontend/app.js"></script>
+  </body>
+</html>

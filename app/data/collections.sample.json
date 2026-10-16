@@ -1,0 +1,119 @@
+[
+  {
+    "name": "rag_default_store",
+    "description": "Default catch-all collection",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": ["General knowledge", "Uncategorized documents"]
+  },
+  {
+    "name": "kb_oa",
+    "description": "OA system knowledge base",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": ["OA system login", "OA approval process"]
+  },
+  {
+    "name": "kb_insurance",
+    "description": "Insurance system knowledge base",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": ["Insurance data security", "Policy approval flow"]
+  },
+  {
+    "name": "kb_redis",
+    "description": "Redis operations knowledge base",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": ["Redis cluster scaling", "Slow query troubleshooting"]
+  },
+  {
+    "name": "papers_agent",
+    "description": "Agent/多智能体相关论文资料库",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": []
+  },
+  {
+    "name": "class_exam_homework",
+    "description": "课程考试作业相关资料库",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": []
+  },
+  {
+    "name": "course_notes",
+    "description": "课程课件与课堂笔记资料库",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": []
+  },
+  {
+    "name": "personal_diary",
+    "description": "个人日记资料库",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": []
+  },
+  {
+    "name": "personal_notes",
+    "description": "个人笔记与备忘资料库",
+    "embedding_dim": 1024,
+    "index_params": {"metric_type": "L2", "index_type": "IVF_FLAT", "params": {"nlist": 1024}},
+    "fields": [
+      {"name": "id", "dtype": "VARCHAR", "is_primary": true, "max_length": 256},
+      {"name": "embedding", "dtype": "FLOAT_VECTOR", "dim": 1024},
+      {"name": "text", "dtype": "VARCHAR", "max_length": 65535},
+      {"name": "metadata", "dtype": "VARCHAR", "max_length": 65535}
+    ],
+    "examples": []
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "domain-learning",
+    "name": "学习资料",
+    "description": "学习与课程相关资料",
+    "level": "DOMAIN",
+    "kind": "KB"
+  },
+  {
+    "id": "cat-paper",
+    "name": "论文学习",
+    "description": "论文阅读、总结、复现",
+    "level": "CATEGORY",
+    "parent_id": "domain-learning",
+    "kind": "KB"
+  },
+  {
+    "id": "topic-paper-agent",
+    "name": "Agent/多智能体论文",
+    "description": "Agent、多智能体相关论文学习与总结",
+    "level": "TOPIC",
+    "parent_id": "cat-paper",
+    "kind": "KB",
+    "collection_name": "papers_agent",
+    "examples": ["总结最近的多智能体论文", "Agent论文的关键贡献是什么"]
+  },
+  {
+    "id": "cat-exam",
+    "name": "考试习题复习",
+    "description": "考试、作业、题库与复习资料",
+    "level": "CATEGORY",
+    "parent_id": "domain-learning",
+    "kind": "KB"
+  },
+  {
+    "id": "topic-exam-homework",
+    "name": "课程作业与题目",
+    "description": "课程作业、习题、复习题解析",
+    "level": "TOPIC",
+    "parent_id": "cat-exam",
+    "kind": "KB",
+    "collection_name": "class_exam_homework",
+    "examples": ["这道题怎么做", "帮我复习上周作业"]
+  },
+  {
+    "id": "cat-courseware",
+    "name": "课件与课堂笔记",
+    "description": "课程讲义、课件、课堂笔记",
+    "level": "CATEGORY",
+    "parent_id": "domain-learning",
+    "kind": "KB"
+  },
+  {
+    "id": "topic-course-notes",
+    "name": "课件/笔记",
+    "description": "课件与课堂笔记查询",
+    "level": "TOPIC",
+    "parent_id": "cat-courseware",
+    "kind": "KB",
+    "collection_name": "course_notes",
+    "examples": ["帮我找一下这周的课件", "回顾课堂笔记里的要点"]
+  },
+  {
+    "id": "domain-personal",
+    "name": "个人资料",
+    "description": "个人日记、备忘与计划",
+    "level": "DOMAIN",
+    "kind": "KB"
+  },
+  {
+    "id": "cat-diary",
+    "name": "日记",
+    "description": "个人日记与情绪记录",
+    "level": "CATEGORY",
+    "parent_id": "domain-personal",
+    "kind": "KB"
+  },
+  {
+    "id": "topic-personal-diary",
+    "name": "日记记录",
+    "description": "日记内容查询与回顾",
+    "level": "TOPIC",
+    "parent_id": "cat-diary",
+    "kind": "KB",
+    "collection_name": "personal_diary",
+    "examples": ["回顾一下我上周的日记", "我昨天写了什么"]
+  },
+  {
+    "id": "cat-notes",
+    "name": "个人笔记",
+    "description": "备忘、灵感与学习笔记",
+    "level": "CATEGORY",
+    "parent_id": "domain-personal",
+    "kind": "KB"
+  },
+  {
+    "id": "topic-personal-notes",
+    "name": "个人笔记库",
+    "description": "个人笔记与备忘查询",
+    "level": "TOPIC",
+    "parent_id": "cat-notes",
+    "kind": "KB",
+    "collection_name": "personal_notes",
+    "examples": ["查一下我之前的灵感笔记", "我记过的复习计划在哪"]
+  },
+  {
+    "id": "system-chat",
+    "name": "闲聊问候",
+    "description": "问候、聊天、身份说明",
+    "level": "TOPIC",
+    "kind": "SYSTEM",
+    "examples": ["你好", "你是谁", "今天心情不好"]
+  }
+]
